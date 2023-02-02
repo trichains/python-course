@@ -1,0 +1,5 @@
+n=int(input('Digite um numero: '))
+print(f'Seu número é: {n}!')
+print(f'o dobro de seu número é: {n*2}')
+print(f'o triplo de seu número é: {n*3}')
+print(f'a raíz quadrada de seu número é: {n**(1/2):.2f}')
