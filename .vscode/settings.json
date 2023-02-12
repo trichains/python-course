@@ -7,6 +7,7 @@
     "discord.enabled": true,
     "python.analysis.typeCheckingMode": "basic",
     "cSpell.words": [
+        "ESCANELO",
         "funcionário"
     ],
     "cSpell.language": "en,pt,pt-BR"
