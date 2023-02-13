@@ -1,8 +1,11 @@
 # importa a função "choice" da biblioteca random
 from random import choice
+# importa a função "sleep" da biblioteca time
+from time import sleep
 
 # imprime o título do jogo e o aviso para o usuário escolher a jogada
-print("Jokenpô\nEscolha sua jogada: pedra, papel ou tesoura")
+print("Jokenpô\n"
+      f"Escolha sua jogada: pedra, papel ou tesoura")
 
 # lê a jogada do usuário e a armazena como string, convertendo para letra minúscula
 jogada_usuario = input().lower()
@@ -12,6 +15,13 @@ jogadas = ["pedra","papel","tesoura"]
 
 # escolhe a jogada do computador de forma aleatória
 jogada_computador = choice(jogadas)
+
+
+print('JO')
+sleep(1)
+print('KEN')
+sleep(1)
+print('PÔ!!!\n')
 
 # compara a jogada do usuário com a do computador
 # se as jogadas forem iguais, imprime "EMPATE"

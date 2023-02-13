@@ -1,12 +1,35 @@
-valor_casa_entrada=float(input('Qual o valor da casa que você deseja comprar? R$'))
-salario_entrada=float(input('Qual o seu salário? R$'))
-valor_parcela_entrada=int(input('Em quantos anos você quer pagar a casa? R$'))*12
+# Recebendo o valor da casa desejada
+valor_casa_entrada = float(input('Valor da casa (em R$): '))
 
-prestacao_mensal = valor_casa_entrada / valor_parcela_entrada
-limite = (salario_entrada * 0.3)
+# Recebendo o salário do usuário
+salario_entrada = float(input('Salário do comprador (em R$): '))
 
+# Recebendo o tempo desejado para pagamento da casa, em anos
+valor_parcela_entrada = int(input('Quantos anos de financiamento? '))
+
+# Calculando o número de parcelas (convertendo anos em meses)
+parcelas = valor_parcela_entrada * 12
+
+# Calculando a prestação mensal
+prestacao_mensal = valor_casa_entrada / parcelas
+
+# Definindo o limite de prestação mensal com base no salário do usuário
+# (30% do salário)
+limite = salario_entrada * 0.3
+
+# Verificando se a prestação mensal é maior que o limite de pagamento
 if prestacao_mensal > limite:
-    print('Desculpe, o empréstimo para a compra desta casa foi negado...')
+    # Se a prestação mensal for maior que o limite, exibe a mensagem de negação
+    print(f"Para pagar uma casa de R${valor_casa_entrada:.2f} em {valor_parcela_entrada} anos\n"
+          f"a prestação será de R${prestacao_mensal:.2f}.\n"
+          f"Com o salário de R${salario_entrada:.2f},\n"
+          f"o limite de prestação mensal é de R${limite:.2f}.\n"
+          "Portanto, o empréstimo para a compra desta casa foi NEGADO!")
 else:
-    print('Parabéns, o empréstimo para a compra desta casa foi aprovado!')
-    print(f"O valor da prestação mensal será de R${prestacao_mensal:.2f}.")
+    # Se a prestação mensal não for maior que o limite, exibe a mensagem de aprovação
+    print(f"Para pagar uma casa de R${valor_casa_entrada:.2f} em {valor_parcela_entrada} anos\n"
+          f"a prestação será de R${prestacao_mensal:.2f}.\n"
+          f"Com o salário de R${salario_entrada:.2f},\n"
+          f"o limite de prestação mensal é de R${limite:.2f}.\n"
+          "Portanto, o empréstimo para a compra desta casa foi APROVADO!")
+    

@@ -1,9 +1,14 @@
-entrada_primeiro_valor = int ( input ( " Digite o primeiro valor: " ))
-entrada_segundo_valor = int ( input ( " Digite o segundo valor: " ))
+# Lê os dois valores informados pelo usuário
+primeiro_valor = int(input("Informe o primeiro valor: "))
+segundo_valor = int(input("Informe o segundo valor: "))
 
-if entrada_primeiro_valor > entrada_segundo_valor:
-    print(f'O primeiro valor "{entrada_primeiro_valor}" é maior que o segundo valor "{entrada_segundo_valor}"')
-elif entrada_segundo_valor > entrada_primeiro_valor:
-    print(f'O segundo valor "{entrada_segundo_valor}" é maior que o primeiro valor "{entrada_primeiro_valor}"')
+# Verifica qual dos dois valores é o maior
+if primeiro_valor > segundo_valor:
+    # Imprime o resultado, indicando que o primeiro valor é o maior
+    print(f"\033[32mO primeiro valor '{primeiro_valor}' é maior que o segundo valor '{segundo_valor}'\033[0m")
+elif segundo_valor > primeiro_valor:
+    # Imprime o resultado, indicando que o segundo valor é o maior
+    print(f"\033[33mO segundo valor '{segundo_valor}' é maior que o primeiro valor '{primeiro_valor}'\033[0m")
 else:
-    print(f'Não existe valor maior, os dois são iguais.')
+    # Imprime o resultado, indicando que não existe um valor maior, pois os dois são iguais
+    print(f'\033[31mNão existe valor maior, os dois são iguais.\033[0m')

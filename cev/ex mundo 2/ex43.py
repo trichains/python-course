@@ -22,4 +22,4 @@ else:
     resultado = "obesidade mórbida"
 
 # Exibe o resultado para o usuário
-print(f"Seu IMC é {imc:.2f} e você está classificado como {resultado}.")
+print(f"Seu IMC é {imc:.1f} e você está classificado como {resultado}.")
