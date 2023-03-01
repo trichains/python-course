@@ -3,7 +3,7 @@ if nome == 'Cristhian':
     print("Que nome bonito!")
 elif nome == 'João' or nome == 'Maria':
     print('Seu nome é bem comum no Brasil')
-elif nome in ('Bruna Ana Cláudia Fernanda'):
+elif nome in ('Bruna Ana Cláudia Fernanda Beatriz'):
     print('Belo nome feminino!')
 else:
     print('Que nome sem graça... :/')
