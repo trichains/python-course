@@ -13,7 +13,7 @@ while continuar == 'S':
         maior = num
     if num < menor:
         menor = num
-    continuar = input('Quer continuar? (S/N): ').upper()
+    continuar = input('Quer continuar? (S/N): ').strip().upper()[0]
 
 # Calcula a média
 media = soma / cont
